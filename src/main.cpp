@@ -2,7 +2,7 @@
 
 int main()
 {
-    std::cout << "CMake Test";
+    std::cout << "CMake Test" << std::endl;
 
     return 0;
 }
