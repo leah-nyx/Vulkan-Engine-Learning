@@ -16,7 +16,10 @@ target_link_libraries(VulkanEngine
         Xi
 )
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 target_sources(VulkanEngine
     PRIVATE
+        src/application.cpp
         src/main.cpp
 )
