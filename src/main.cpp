@@ -25,8 +25,6 @@ private:
 
     void initWindow()
     {
-        std::cout << "Initalizing window" << std::endl;
-
         glfwInit();
 
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
@@ -36,7 +34,6 @@ private:
     }
     void initVulkan()
     {
-        std::cout << "Initalizing vulkan" << std::endl;
         createInstance();
     }
 
@@ -50,8 +47,6 @@ private:
 
     void cleanup()
     {
-        std::cout << "Cleaning up" << std::endl;
-
         vkDestroyInstance(instance, nullptr);
 
         glfwDestroyWindow(window);
@@ -61,8 +56,6 @@ private:
 
     void createInstance() 
     {
-        std::cout << "Creating instance" << std::endl;
-
         VkApplicationInfo appInfo{};
         appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
         appInfo.pApplicationName = "Hello Triangle";
